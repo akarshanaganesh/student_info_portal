@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <p class="subtitle">Create your student account</p>
+
+        <form id="registerForm">
+            <label for="name">Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span class="error" id="nameError"></span>
+
+            <label for="roll">Roll Number</label>
+            <input type="text" id="roll" placeholder="Enter roll number">
+            <span class="error" id="rollError"></span>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span class="error" id="emailError"></span>
+
+            <label for="course">Select Course</label>
+            <select id="course">
+                <option value="">-- Choose Course --</option>
+                <option value="CSE">Computer Science</option>
+                <option value="IT">Information Technology</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="EEE">Electrical and Electronics</option>
+            </select>
+            <span class="error" id="courseError"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a strong password">
+            <small>Use 8 characters, uppercase, lowercase and a number.</small>
+            <span class="error" id="passwordError"></span>
+
+            <label for="file">Upload Student Document</label>
+            <input type="file" id="file" accept=".pdf,.jpg,.png">
+            <span class="error" id="fileError"></span>
+
+            <button type="submit">Register Now</button>
+            <p id="success" role="status"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
